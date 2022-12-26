@@ -7,6 +7,33 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Dodavanje pregleda</h1>
+    <form action="get">
+        <table>
+            <tr>
+                <td><label for="naziv">Naziv</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="doktor">Doktor</label></td>
+                <td><input list="doktori" id="doktor" name="doktor">
+                <datalist id="doktori">
+                <option value="Pera Peric"></option>
+                <option value="Mika Mikic"></option>
+                <option value="Maja Majic"></option>
+                <option value="Jela Jelic"></option>
+                </datalist></td>
+            </tr>
+            <tr>
+                <td><label for="trajanje">Trajanje</label></td>
+                <td><input type="time">
+            </tr>
+            <tr>
+                <td><label for="cena">Cena</label></td>
+                <td><input type="number"></td>
+            </tr>
+        </table>
+    </form>
     
 </body>
 </html>
