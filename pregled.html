@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="css/sass.css">
 </head>
 <body>
+    <div class="pregled">
     <h1>Dodavanje pregleda</h1>
-    <form action="get">
-        <table>
+    <form action="#" method="get">
+        <table class="forma">
             <tr>
                 <td><label for="naziv">Naziv</label></td>
                 <td><input type="text"></td>
-            </tr>
-            <tr>
                 <td><label for="doktor">Doktor</label></td>
                 <td><input list="doktori" id="doktor" name="doktor">
                 <datalist id="doktori">
@@ -28,13 +27,15 @@
             <tr>
                 <td><label for="trajanje">Trajanje</label></td>
                 <td><input type="time">
-            </tr>
-            <tr>
                 <td><label for="cena">Cena</label></td>
                 <td><input type="number"></td>
             </tr>
+            <tr>
+                <td><input class="submit" type="submit" value="Dodaj" name="dodaj"></td>
+                <td><input class="reset" type="reset" value="Odustani" name="brisi"></td>
+            </tr>
         </table>
     </form>
-    
+    </div>
 </body>
 </html>
